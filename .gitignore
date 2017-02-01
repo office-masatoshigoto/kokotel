@@ -1,0 +1,9 @@
+#files
+.DS_Store
+Thumbs.db
+
+#directory
+/tmp
+
+#wild card
+.log
