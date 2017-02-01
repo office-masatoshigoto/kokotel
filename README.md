@@ -1,2 +1,2 @@
 # kokotel
-renewal kokotel project
+renew kokotel project
