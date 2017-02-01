@@ -1,8 +1,8 @@
-# kokotel
-renew kokotel project
+# KOKOTEL
+Renew kokotel project
 
 
-## member
+## MEMBER
 *Mr.Nakatsuka
 *Mr.Kawamata
 *Mr.Goto
