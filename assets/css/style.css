@@ -152,14 +152,22 @@ a:hover {
   background: #c8bfb6;
 }
 
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
 /* ------------------------------------------------- *
  *        @extend-module
  * ------------------------------------------------- */
-.font-comfortaa, .btn, .header-navi1, .header-navi2, footer, #top h1, #top .property .tit {
+.font-comfortaa, .btn, .header-navi1, .header-navi2, footer, #top h1, #top .property .tit, #contact .contact-area .box-contact .name {
   font-family: 'Comfortaa', cursive;
 }
 
-.font-asap, .btns-area .tit, .btns-area .tit2, .btns-area .subscribe-area {
+.font-asap, .tit-page, .btns-area .tit, .btns-area .tit2, .btns-area .subscribe-area, #contact .contact-area .tit {
   font-family: 'Asap', sans-serif;
 }
 
@@ -316,6 +324,22 @@ a:hover {
 .icon-flag-eng {
   font-size: 14.9px;
   padding-left: 30px;
+}
+
+.tit-page {
+  border: 2px solid #16216a;
+  margin-top: 30px;
+  padding: 65px 0px;
+  color: #16216a;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.tit-page:before {
+  content: url(../../assets/imgs/icon-koko-dad.svg);
+  position: relative;
+  bottom: -0.2em;
+  margin-right: 0.1em;
 }
 
 /* ------------------------------------------------- *
@@ -534,13 +558,10 @@ footer .copy-footer .copyright a {
  *        bread-crumb-module
  * ------------------------------------------------- */
 .breadcrumb {
-  background: #c06c85;
-  font-size: 0.9em;
-  letter-spacing: 1.2px;
+  background: #fff;
 }
-
 .breadcrumb a {
-  color: #000;
+  color: #91a1a5;
 }
 
 /* ------------------------------------------------- *
@@ -609,6 +630,49 @@ footer .copy-footer .copyright a {
   background-color: rgba(21, 22, 24, 0.9);
   padding: 10px 35px;
   line-height: 1.6;
+}
+
+/* ------------------------------------------------- *
+ *        contact-module
+ * ------------------------------------------------- */
+#contact h1 {
+  margin-top: 30px;
+}
+#contact .contact-area {
+  margin-top: 80px;
+}
+#contact .contact-area .tit {
+  color: #16216a;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+#contact .contact-area .box-contact .name {
+  font-size: 1.40em;
+  color: #16216a;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #c8bfb6;
+  width: 40px;
+}
+#contact .contact-area .box-contact .btn {
+  margin-top: 10px;
+}
+#contact .contact-area .box-contact li a {
+  color: #91a1a5;
+  cursor: pointer;
+}
+#contact .contact-area .box-contact li i {
+  color: #16216a;
+}
+#contact .contact-area .box-contact input, #contact .contact-area .box-contact textarea {
+  margin-top: 10px;
+}
+#contact .contact-area .box-contact textarea {
+  height: 80px;
+}
+#contact .contact-area .box-contact .form-group {
+  padding-bottom: 30px;
+  border-bottom: 2px dotted;
+  color: #504845;
 }
 
 /* ------------------------------------------------- *
@@ -709,6 +773,10 @@ footer .copy-footer .copyright a {
   content: "\f0da";
 }
 
+.fa-angle-right:before {
+  content: "\f105";
+}
+
 .fa-map-marker:before {
   content: "\f041";
 }
@@ -719,6 +787,19 @@ footer .copy-footer .copyright a {
 
 .fa-envelope:before {
   content: "\f0e0";
+}
+
+.fa-info:before {
+  content: "\f129";
+}
+
+.fa-at:before {
+  content: "\f1fa";
+}
+
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
 }
 
 /* ------------------------------------------------- *
