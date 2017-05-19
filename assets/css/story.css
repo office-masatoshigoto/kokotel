@@ -1,0 +1,149 @@
+/* ------------------------------------------------- *
+ *        variable-module
+ * ------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700|Comfortaa:400,700);
+.font-comfortaa {
+  font-family: 'Comfortaa', cursive;
+}
+
+.font-asap, #story .h1-area h1 {
+  font-family: 'Asap', sans-serif;
+}
+
+/* ------------------------------------------------- *
+ *        story-module
+ * ------------------------------------------------- */
+#story .h1-area {
+  margin: 60px 0px;
+}
+#story .h1-area .bg-line-fluffy-above {
+  background: url(../../assets/imgs/line-fluffy-above.png) repeat-x;
+}
+#story .h1-area h1 {
+  font-size: 2.0em;
+  background: url(../../assets/imgs/line-fluffy-below.png) repeat-x;
+  background-position: bottom;
+  padding: 30px 0px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+#story .h1-area fieldset {
+  margin-top: 40px;
+  border: 3px solid #16216a;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  padding: 20px 0px 40px 0px;
+}
+#story .h1-area fieldset legend {
+  text-align: center;
+  color: #16216a;
+  font-size: 2.0em;
+  padding: 0px 20px;
+}
+#story .h1-area fieldset .name {
+  color: #fff;
+  background: #16216a;
+  margin: 20px 0px 10px 0px;
+  display: inline-block;
+  padding: 5px 15px;
+}
+#story .h1-area fieldset .boxFamily {
+  padding: 0px 5px;
+}
+#story .h1-area fieldset .boxLeft {
+  padding: 0px 5px;
+}
+#story .h1-area fieldset .boxRight {
+  padding: 0px 5px;
+}
+#story .h1-area fieldset img {
+  max-width: 112px;
+}
+#story .bg-navy {
+  background: #16216a;
+  color: #fff;
+}
+#story .boxPictureBook {
+  padding: 40px 0px 60px 0px;
+}
+#story .boxPictureBook .tit {
+  font-size: 2.0em;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+#story .boxPictureBook .titBottom {
+  font-size: 2.0em;
+  line-height: 1.4;
+  margin-top: 60px;
+}
+#story .boxPictureBook .txt {
+  margin-top: 20px;
+}
+#story .boxPictureBook .boxIn {
+  margin-top: 60px;
+}
+#story .boxPictureBook .boxIn .boxLeft {
+  padding: 0px 15px;
+}
+#story .boxPictureBook .boxIn .boxRight {
+  padding: 0px 15px;
+}
+
+@media screen and (max-width: 767px) {
+  #story .h1-area {
+    margin: 40px 0px;
+  }
+  #story .h1-area h1 {
+    font-size: 1.6em;
+    padding: 30px 0px;
+  }
+  #story .h1-area fieldset {
+    margin-top: 30px;
+    padding: 20px 0px 30px 0px;
+    /*.boxLeft {
+    	padding-right: 10px;
+    }
+    .boxRight {
+    	padding-left: 10px;
+    }*/
+  }
+  #story .h1-area fieldset legend {
+    font-size: 1.4em;
+    padding: 0px 10px;
+    white-space: nowrap;
+  }
+  #story .h1-area fieldset .name {
+    padding: 5px 10px;
+    white-space: nowrap;
+  }
+  #story .h1-area fieldset .boxCharaBottom {
+    margin-top: 20px;
+  }
+  #story .boxPictureBook {
+    padding: 40px 0px 40px 0px;
+  }
+  #story .boxPictureBook .tit {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+  }
+  #story .boxPictureBook .titBottom {
+    font-size: 1.6em;
+    margin-top: 40px;
+  }
+  #story .boxPictureBook .txt {
+    margin-top: 20px;
+  }
+  #story .boxPictureBook .boxIn {
+    margin-top: 40px;
+  }
+  #story .boxPictureBook .boxIn .boxLeft {
+    padding: 0px 0px;
+  }
+  #story .boxPictureBook .boxIn .boxRight {
+    padding: 0px 0px;
+  }
+  #story .boxPictureBook .boxIn img {
+    margin-bottom: 10px;
+  }
+}

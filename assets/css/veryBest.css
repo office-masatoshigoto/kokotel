@@ -1,0 +1,222 @@
+/* ------------------------------------------------- *
+ *        variable-module
+ * ------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700|Comfortaa:400,700);
+.font-comfortaa, #very-best .recommend-posts .head {
+  font-family: 'Comfortaa', cursive;
+}
+
+.font-asap, #very-best .date {
+  font-family: 'Asap', sans-serif;
+}
+
+/* ------------------------------------------------- *
+ *        very-best-module
+ * ------------------------------------------------- */
+#very-best .imgHeader {
+  margin-top: -10px;
+}
+#very-best .start {
+  background: url(../../assets/imgs/icon-koko-dad.svg) no-repeat;
+  margin: 0 auto;
+  width: 61px;
+  height: 43px;
+  margin-top: 40px;
+}
+#very-best .sns {
+  margin-top: 20px;
+  text-align: center;
+}
+#very-best .sns-bottom {
+  margin-top: 40px;
+  text-align: center;
+}
+#very-best h1 {
+  font-size: 2.2em;
+  color: #16216a;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 1.1;
+}
+#very-best .tit-category {
+  font-size: 2.2em;
+  color: #16216a;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+#very-best .date {
+  font-size: 0.9em;
+  color: #504845;
+  margin-top: 5px;
+}
+#very-best .box-article {
+  margin-top: 40px;
+}
+#very-best .box-article a {
+  color: #91a1a5;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#very-best .box-article a:hover {
+  text-decoration: none;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+}
+#very-best .box-article img {
+  margin-bottom: 20px;
+}
+#very-best .box-article .thumb {
+  margin-bottom: 20px;
+}
+#very-best .box-article h2 {
+  margin-bottom: 10px;
+  font-size: 2.0em;
+  color: #16216a;
+}
+#very-best .box-article p {
+  margin-bottom: 40px;
+  color: #000;
+}
+#very-best .box-article .btn-read-more {
+  margin-top: -20px;
+}
+#very-best .btn-category-more {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#very-best .profile-area {
+  margin-top: 50px;
+}
+#very-best .profile-area .breaking-line {
+  text-align: center;
+  border-top: 2px solid #504845;
+  width: 90px;
+  margin-bottom: 50px;
+}
+#very-best .profile-area .img-circle {
+  border: 5px solid #c8bfb6;
+}
+#very-best .profile-area .name {
+  font-size: 1.3em;
+}
+#very-best .profile-area .position {
+  color: #c8bfb6;
+  line-height: 1.4;
+}
+#very-best .profile-area .profile {
+  margin-top: 10px;
+}
+#very-best .profile-area .link {
+  margin-top: 10px;
+}
+#very-best .profile-area .link a {
+  color: #91a1a5;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#very-best .profile-area .link a:hover {
+  text-decoration: none;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+}
+#very-best .recommend-posts {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+#very-best .recommend-posts a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#very-best .recommend-posts a:hover {
+  text-decoration: none;
+  color: #fff;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+}
+#very-best .recommend-posts .head {
+  color: #16216a;
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+#very-best .recommend-posts .tit {
+  font-size: 1.2em;
+  color: #16216a;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  #very-best .start {
+    margin-top: 20px;
+  }
+  #very-best h1 {
+    font-size: 1.8em;
+    margin-top: 15px;
+  }
+  #very-best .tit-category {
+    font-size: 1.8em;
+    margin-top: 15px;
+  }
+  #very-best .box-article {
+    margin-top: 20px;
+  }
+  #very-best .box-article img {
+    margin-bottom: 15px;
+  }
+  #very-best .box-article .thumb {
+    margin-bottom: 0px;
+  }
+  #very-best .box-article h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  #very-best .box-article p {
+    margin-bottom: 30px;
+  }
+  #very-best .boxList .box-article {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+  }
+  #very-best .boxList .box-article:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  #very-best .profile-area .breaking-line {
+    text-align: center;
+    width: 90px;
+    margin-bottom: 50px;
+  }
+  #very-best .profile-area .name {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #very-best .profile-area .position {
+    text-align: center;
+    line-height: 1.4;
+  }
+  #very-best .profile-area .link {
+    text-align: center;
+  }
+  #very-best .recommend-posts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #very-best .recommend-posts .head {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  #very-best .recommend-posts .tit {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+  }
+}

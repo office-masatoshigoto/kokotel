@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* ------------------------------------------------- *
+ *        variable-module
+ * ------------------------------------------------- */
+@mixin link-transfer {
+	a {
+		text-decoration: none;
+		color: #fff;
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+			filter:alpha(opacity=50);
+			-moz-opacity: 0.50;
+			opacity: 0.50;
+		}
+	}
+}
+
+@mixin opacity($property:0,$propertyIE:0){
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$propertyIE})";
+    filter: alpha(opacity=$propertyIE);
+    -moz-opacity: $property;
+    -khtml-opacity: $property;
+    opacity: $property;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700|Comfortaa:400,700);
+
+$path-img: '../../assets/imgs/';
+$navy:#16216a;
+$pale-blue:#91a1a5;
+$pink:#c06c85;
+$brown:#c8bfb6;
+$dark-brown:#504845;
+$black:#151618;
+
+.font-comfortaa {
+	font-family: 'Comfortaa', cursive;
+}
+.font-asap {
+	font-family: 'Asap', sans-serif;
+}
+
+
+
+/* ------------------------------------------------- *
+ *        privacy-policy-module
+ * ------------------------------------------------- */
+#privacy-policy {
+	h1 {
+		margin-top: 30px;
+	}
+	h2 {
+		font-size: 1.6em;
+		//margin-bottom: 60px;
+		color: $navy;
+		.border {
+			padding-top: 10px;
+			border-bottom: 2px solid $brown;
+			width: 40px;
+		}
+	}
+	h3 {
+		font-size: 1.2em;
+		margin: 60px 0px 20px 0px;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+
+	.plivacy-policy-box {
+		margin-top: 80px;
+		ul {
+			margin-left: 20px;
+		}
+		li {
+			list-style-type: decimal;
+			margin-bottom: 5px;
+		}
+		li:last-child {
+			margin-bottom: 5px;
+		}
+		ul li ul {
+			margin-left: 0px;
+			margin-top: 5px;
+		}
+		ul li ul li {
+			counter-increment: cnt;
+			list-style-type: none;
+		}
+		ul li ul li:before {
+			content: "(" counter(cnt) ") ";
+		}
+		.font-s {
+			font-size: 0.9em;
+		}
+		a {
+			color: $pale-blue;
+			-webkit-transition-duration: 0.5s;
+			transition-duration: 0.5s;
+			&:hover {
+				text-decoration: none;
+				filter:alpha(opacity=50);
+				-moz-opacity: 0.50;
+				opacity: 0.50;
+			}
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width:767px) {
+	#privacy-policy {
+		h1 {
+			margin-top: 10px;
+		}
+		h3 {
+			margin: 40px 0px 20px 0px;
+		}
+		.plivacy-policy-box {
+			margin-top: 60px;
+		}
+	}
+
+}

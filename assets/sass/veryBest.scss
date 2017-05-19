@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/* ------------------------------------------------- *
+ *        variable-module
+ * ------------------------------------------------- */
+@mixin link-transfer {
+	a {
+		text-decoration: none;
+		color: #fff;
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+			filter:alpha(opacity=50);
+			-moz-opacity: 0.50;
+			opacity: 0.50;
+		}
+	}
+}
+
+@mixin opacity($property:0,$propertyIE:0){
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$propertyIE})";
+    filter: alpha(opacity=$propertyIE);
+    -moz-opacity: $property;
+    -khtml-opacity: $property;
+    opacity: $property;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700|Comfortaa:400,700);
+
+$path-img: '../../assets/imgs/';
+$navy:#16216a;
+$pale-blue:#91a1a5;
+$pink:#c06c85;
+$brown:#c8bfb6;
+$dark-brown:#504845;
+$black:#151618;
+
+.font-comfortaa {
+	font-family: 'Comfortaa', cursive;
+}
+.font-asap {
+	font-family: 'Asap', sans-serif;
+}
+
+
+
+/* ------------------------------------------------- *
+ *        very-best-module
+ * ------------------------------------------------- */
+#very-best {
+	.imgHeader{
+		margin-top: -10px;
+	}
+	.start {
+		background: url(#{$path-img}icon-koko-dad.svg) no-repeat;
+		margin: 0 auto;
+		width: 61px;
+		height: 43px;
+		margin-top: 40px;
+	}
+	.sns {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.sns-bottom {
+		margin-top: 40px;
+		text-align: center;
+	}
+	h1 {
+		font-size: 2.2em;
+		color: $navy;
+		font-weight: bold;
+		margin-top: 15px;
+		line-height: 1.1;
+	}
+	.tit-category {
+		font-size: 2.2em;
+		color: $navy;
+		font-weight: bold;
+		margin-top: 15px;
+		line-height: 1.1;
+		margin-bottom: 20px;
+	}
+	.date {
+		@extend .font-asap;
+		font-size: 0.9em;
+		color: $dark-brown;
+		margin-top: 5px;
+	}
+	.box-article {
+		margin-top: 40px;
+		//@include link-transfer;
+		a {
+			color: $pale-blue;
+			-webkit-transition-duration: 0.5s;
+			transition-duration: 0.5s;
+		}
+		a:hover {
+			text-decoration: none;
+			filter:alpha(opacity=50);
+			-moz-opacity: 0.50;
+			opacity: 0.50;
+		}
+		img {
+			margin-bottom: 20px;
+		}
+		.thumb {
+			margin-bottom: 20px;
+		}
+		h2 {
+			margin-bottom: 10px;
+			font-size: 2.0em;
+			color: $navy;
+		}
+		p {
+			margin-bottom: 40px;
+			color: #000;
+		}
+		.btn-read-more {
+			margin-top: -20px;
+		}
+	}
+	.btn-category-more {
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+
+	.profile-area {
+		margin-top: 50px;
+		.breaking-line {
+			text-align: center;
+			border-top: 2px solid $dark-brown;
+			width: 90px;
+			margin-bottom: 50px;
+		}
+		.img-circle {
+			border: 5px solid $brown;
+		}
+		.name {
+			font-size: 1.3em;
+		}
+		.position {
+			color: $brown;
+			line-height: 1.4;
+		}
+		.profile {
+			margin-top: 10px;
+		}
+		.link {
+			margin-top: 10px;
+			a {
+				color: $pale-blue;
+				-webkit-transition-duration: 0.5s;
+				transition-duration: 0.5s;
+			}
+			a:hover {
+				text-decoration: none;
+				filter:alpha(opacity=50);
+				-moz-opacity: 0.50;
+				opacity: 0.50;
+			}
+		}
+	}
+
+	.recommend-posts {
+		margin-top: 50px;
+		margin-bottom: 120px;
+		@include link-transfer;
+		.head {
+			color: $navy;
+			font-size: 1.3em;
+			@extend .font-comfortaa;
+			margin-bottom: 30px;
+			margin-top: 10px;
+		}
+		.tit {
+			font-size: 1.2em;
+			color: $navy;
+			line-height: 1.5;
+			margin-top: 5px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+	#very-best {
+		.start {
+			margin-top: 20px;
+		}
+		h1 {
+			font-size: 1.8em;
+			margin-top: 15px;
+		}
+		.tit-category {
+			font-size: 1.8em;
+			margin-top: 15px;
+		}
+		.box-article {
+			margin-top: 20px;
+			img {
+				margin-bottom: 15px;
+			}
+			.thumb {
+				margin-bottom: 0px;
+			}
+			h2 {
+				margin-bottom: 15px;
+				font-size: 1.5em;
+			}
+			p {
+				margin-bottom: 30px;
+			}
+		}
+
+		.boxList .box-article {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 40px;
+		}
+		.boxList .box-article:last-of-type {
+			border-bottom:none;
+			padding-bottom: 0px;
+		}
+
+		.profile-area {
+			.breaking-line {
+				text-align: center;
+				width: 90px;
+				margin-bottom: 50px;
+			}
+			.name {
+				font-size: 1.2em;
+				text-align: center;
+				margin-top: 10px;
+			}
+			.position {
+				text-align: center;
+				line-height: 1.4;
+			}
+			.link {
+				text-align: center;
+			}
+		}
+
+		.recommend-posts {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			.head {
+				font-size: 1.3em;
+				margin-bottom: 30px;
+				line-height: 1.2;
+			}
+			.tit {
+				font-size: 1.1em;
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+
+
+
+}
+
+

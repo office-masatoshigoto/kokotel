@@ -1,0 +1,84 @@
+/* ------------------------------------------------- *
+ *        variable-module
+ * ------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700|Comfortaa:400,700);
+.font-comfortaa {
+  font-family: 'Comfortaa', cursive;
+}
+
+.font-asap {
+  font-family: 'Asap', sans-serif;
+}
+
+/* ------------------------------------------------- *
+ *        privacy-policy-module
+ * ------------------------------------------------- */
+#privacy-policy h1 {
+  margin-top: 30px;
+}
+#privacy-policy h2 {
+  font-size: 1.6em;
+  color: #16216a;
+}
+#privacy-policy h2 .border {
+  padding-top: 10px;
+  border-bottom: 2px solid #c8bfb6;
+  width: 40px;
+}
+#privacy-policy h3 {
+  font-size: 1.2em;
+  margin: 60px 0px 20px 0px;
+}
+#privacy-policy p {
+  margin-bottom: 10px;
+}
+#privacy-policy .plivacy-policy-box {
+  margin-top: 80px;
+}
+#privacy-policy .plivacy-policy-box ul {
+  margin-left: 20px;
+}
+#privacy-policy .plivacy-policy-box li {
+  list-style-type: decimal;
+  margin-bottom: 5px;
+}
+#privacy-policy .plivacy-policy-box li:last-child {
+  margin-bottom: 5px;
+}
+#privacy-policy .plivacy-policy-box ul li ul {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+#privacy-policy .plivacy-policy-box ul li ul li {
+  counter-increment: cnt;
+  list-style-type: none;
+}
+#privacy-policy .plivacy-policy-box ul li ul li:before {
+  content: "(" counter(cnt) ") ";
+}
+#privacy-policy .plivacy-policy-box .font-s {
+  font-size: 0.9em;
+}
+#privacy-policy .plivacy-policy-box a {
+  color: #91a1a5;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#privacy-policy .plivacy-policy-box a:hover {
+  text-decoration: none;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+}
+
+@media screen and (max-width: 767px) {
+  #privacy-policy h1 {
+    margin-top: 10px;
+  }
+  #privacy-policy h3 {
+    margin: 40px 0px 20px 0px;
+  }
+  #privacy-policy .plivacy-policy-box {
+    margin-top: 60px;
+  }
+}

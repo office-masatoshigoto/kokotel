@@ -1,0 +1,94 @@
+/* ------------------------------------------------- *
+ *        variable-module
+ * ------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700|Comfortaa:400,700);
+.font-comfortaa, #contact .contact-area .box-contact .name {
+  font-family: 'Comfortaa', cursive;
+}
+
+.font-asap, #contact .contact-area .tit {
+  font-family: 'Asap', sans-serif;
+}
+
+/* ------------------------------------------------- *
+ *        contact-module
+ * ------------------------------------------------- */
+#contact h1 {
+  margin-top: 30px;
+}
+#contact .contact-area {
+  margin-top: 80px;
+}
+#contact .contact-area .tit {
+  color: #16216a;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+#contact .contact-area .bgTit {
+  background: #16216a;
+  height: 8px;
+}
+#contact .contact-area .tit-deco {
+  background-repeat: repeat-x;
+  background-position: center -7px;
+  height: 7px;
+}
+#contact .contact-area .img {
+  position: relative;
+  z-index: -10;
+  margin-top: -10px;
+}
+#contact .contact-area .box-contact .name {
+  font-size: 1.40em;
+  color: #16216a;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #c8bfb6;
+  width: 40px;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+#contact .contact-area .box-contact .btn {
+  margin-top: 10px;
+}
+#contact .contact-area .box-contact li a {
+  color: #91a1a5;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#contact .contact-area .box-contact li a:hover {
+  text-decoration: none;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+}
+#contact .contact-area .box-contact li i {
+  color: #16216a;
+}
+#contact .contact-area .box-contact input, #contact .contact-area .box-contact textarea {
+  margin-top: 10px;
+}
+#contact .contact-area .box-contact textarea {
+  height: 80px;
+}
+#contact .contact-area .box-contact .form-group {
+  padding-bottom: 30px;
+  border-bottom: 2px dotted;
+  color: #504845;
+}
+
+@media screen and (max-width: 767px) {
+  #contact h1 {
+    margin-top: 10px;
+  }
+  #contact .contact-area {
+    margin-top: 40px;
+  }
+  #contact .contact-area .bgTit, #contact .contact-area .tit-deco, #contact .contact-area .img, #contact .contact-area img {
+    max-width: 265px;
+  }
+  #contact .contact-area .img {
+    margin-bottom: 10px;
+  }
+}

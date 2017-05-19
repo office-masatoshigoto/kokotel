@@ -1,0 +1,155 @@
+/* ------------------------------------------------- *
+ *        variable-module
+ * ------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700|Comfortaa:400,700);
+.font-comfortaa, #recruit .recruit-area li {
+  font-family: 'Comfortaa', cursive;
+}
+
+.font-asap, #recruit .recruit-area .tit {
+  font-family: 'Asap', sans-serif;
+}
+
+#recruit {
+  /*.recruit-area-first-child {
+  	border-top: 1px solid $brown;
+  	padding-top: 80px;
+  }*/
+}
+#recruit h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#recruit p {
+  margin-top: 20px;
+}
+#recruit #head-office, #recruit #surawong, #recruit #aonang-krabi {
+  margin-top: -30px;
+  padding-top: 30px;
+}
+#recruit .navi-recruit {
+  margin-top: 60px;
+}
+#recruit .navi-recruit a {
+  color: #16216a;
+}
+#recruit .navi-recruit .btn-recruit {
+  border: 2px solid #16216a;
+  padding: 10px 0px;
+}
+#recruit .navi-recruit .box-left {
+  padding-right: 10px;
+}
+#recruit .navi-recruit .box-right {
+  padding-left: 10px;
+}
+#recruit .navi-recruit .mt {
+  margin-top: 20px;
+}
+#recruit .recruit-area {
+  margin-top: 80px;
+  border-bottom: 1px solid #c8bfb6;
+  padding-bottom: 80px;
+}
+#recruit .recruit-area .tit {
+  color: #16216a;
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 1.0;
+  margin-bottom: 20px;
+}
+#recruit .recruit-area .box-contact i {
+  color: #16216a;
+}
+#recruit .recruit-area .box-contact .form a {
+  cursor: pointer;
+  color: #91a1a5;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#recruit .recruit-area .box-contact .form a:hover {
+  text-decoration: none;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+}
+#recruit .recruit-area .box-contact .form a i {
+  color: #16216a;
+}
+#recruit .recruit-area .box-contact .btn {
+  margin-top: 10px;
+}
+#recruit .recruit-area .box-contact .btn i {
+  color: #fff;
+}
+#recruit .recruit-area .box-contact input, #recruit .recruit-area .box-contact textarea {
+  margin-top: 10px;
+}
+#recruit .recruit-area .box-contact textarea {
+  height: 80px;
+}
+#recruit .recruit-area li {
+  font-size: 1.40em;
+  color: #16216a;
+  list-style-type: decimal;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+#recruit .recruit-area li a {
+  color: #16216a;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#recruit .recruit-area li a:hover {
+  text-decoration: none;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+}
+#recruit .recruit-area li:last-child {
+  margin-bottom: 0px;
+}
+#recruit .recruit-area-last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  #recruit h1 {
+    margin-top: 10px;
+  }
+  #recruit .navi-recruit {
+    margin-top: 40px;
+  }
+  #recruit .navi-recruit a {
+    color: #16216a;
+  }
+  #recruit .navi-recruit .btn-recruit {
+    border: 2px solid #16216a;
+    padding: 10px 0px;
+  }
+  #recruit .navi-recruit .box-left {
+    padding-right: 0px;
+  }
+  #recruit .navi-recruit .box-right {
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+  #recruit .navi-recruit .mt {
+    margin-top: 10px;
+  }
+  #recruit .recruit-area {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+  #recruit .recruit-area .box-contact {
+    margin-bottom: 20px;
+  }
+  #recruit .recruit-area li {
+    font-size: 1.30em;
+    margin-left: 30px;
+    list-style-type: decimal;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+}

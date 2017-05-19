@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+/* ------------------------------------------------- *
+ *        variable-module
+ * ------------------------------------------------- */
+@mixin link-transfer {
+	a {
+		text-decoration: none;
+		color: #fff;
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+			filter:alpha(opacity=50);
+			-moz-opacity: 0.50;
+			opacity: 0.50;
+		}
+	}
+}
+
+@mixin opacity($property:0,$propertyIE:0){
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$propertyIE})";
+    filter: alpha(opacity=$propertyIE);
+    -moz-opacity: $property;
+    -khtml-opacity: $property;
+    opacity: $property;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700|Comfortaa:400,700);
+
+$path-img: '../../assets/imgs/';
+$navy:#16216a;
+$pale-blue:#91a1a5;
+$pink:#c06c85;
+$brown:#c8bfb6;
+$dark-brown:#504845;
+$black:#151618;
+
+.font-comfortaa {
+	font-family: 'Comfortaa', cursive;
+}
+.font-asap {
+	font-family: 'Asap', sans-serif;
+}
+
+.btnSurawongDetail {
+	font-size: 1.1em;
+}
+
+/* ------------------------------------------------- *
+ *        property-module
+ * ------------------------------------------------- */
+/*
+figure.snip1132 {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+figure.snip1132 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+figure.snip1132 img {
+  max-width: 100%;
+  position: relative;
+  opacity: 1;
+}
+
+figure.snip1132 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+figure.snip1132:hover img,
+figure.snip1132.hover img {
+  -webkit-transform: scale(1.13);
+  transform: scale(1.13);
+}
+*/
+
+
+
+
+
+
+#property {
+	h1 {
+		margin-top: 30px;
+	}
+	.value {
+		margin-top: 60px;
+		.tit-value-area {
+			background: $navy;
+			padding: 20px 0px;
+		}
+		.itemsValue {
+			@include link-transfer;
+			& a {
+			  color: $black;
+
+			  &:hover {
+			  	text-decoration: none;
+			  	color: $black;
+			  }
+			}
+		}
+
+
+		ul {
+			padding: 10px;
+			margin-left: 20px;
+		}
+		li {
+			margin-bottom: 5px;
+			list-style-type: disc;
+		}
+		.bg-grey {
+			background: #f8f8f7;
+		}
+		.btn {
+			padding: 15px 0px;
+		}
+	}
+	.box-inside-padding {
+		padding: 0px 30px 20px 30px;
+	}
+	.location {
+		margin-top: 60px;
+		.box-location {
+			border: 6px solid $navy;
+		}
+		.tit-location {
+			@extend .font-comfortaa;
+			font-size: 1.2em;
+			background: $navy;
+			color: #fff;
+			padding: 10px;
+		}
+		.bg {
+			background-repeat: repeat-x;
+			background-position: center -7px;
+			height: 7px;
+		}
+		.box-inside {
+			padding-top: 30px;
+			.tit-hotel {
+				font-size: 1.2em;
+				@extend .font-comfortaa;
+				background: url(#{$path-img}icon-dad.svg) no-repeat;
+				background-position: 5px;
+				padding-left: 35px;
+				margin-left: -5px;
+			}
+			.btn {
+				margin-top: 10px;
+				width: 95%;
+			}
+			li a {
+				color: $pale-blue;
+				cursor: pointer;
+			}
+			li i {
+				color: $navy;
+			}
+			input, textarea {
+				margin-top: 10px;
+				width: 95%;
+			}
+			textarea {
+				height: 80px;
+				width: 95%;
+			}
+
+			ul {
+				margin-left: 20px;
+				a {
+					-webkit-transition-duration: 0.5s;
+					transition-duration: 0.5s;
+					//color: $black;
+					&:hover {
+						text-decoration: none;
+						color: $black;
+						filter:alpha(opacity=50);
+						-moz-opacity: 0.50;
+						opacity: 0.50;
+					}
+				}
+			}
+			.list-map {
+				margin-top: 20px;
+			}
+			.map-area {
+				border-top:6px solid $navy;
+
+				#map_srawong {
+				  width: 100%;
+				  height: 380px;
+				}
+			}
+		}
+	}
+
+	.promotion {
+		@include link-transfer;
+		margin-top: 60px;
+
+	}
+
+	.ig-area {
+		margin-top: 60px;
+	}
+
+	//detail-page
+	.detail-box {
+		&.first-child {
+			margin-top: 60px;
+		}
+		&.bg-navy {
+			background: $navy;
+		}
+		&.bg-white {
+			background: #fff;
+		}
+
+		.tit {
+			font-size: 2.4em;
+			line-height: 1.4;
+			margin-bottom: 40px;
+		}
+		.text-value {
+			margin-top: 30px;
+			margin-bottom: 50px;
+		}
+	}
+	.nav-tabs {
+		border-bottom: 6px solid $navy;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	.box-carousel {
+		margin-bottom: 10px;
+	}
+	/*
+	.navi-rooms {
+		border-bottom: 6px solid $navy;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		#scroll-menu a {
+			color: $pale-blue;
+			font-size: 1.3em;
+			padding: 0px 40px;
+			-webkit-transition-duration: 0.5s;
+			transition-duration: 0.5s;
+		}
+		a:hover {
+			text-decoration: none;
+			filter:alpha(opacity=50);
+			-moz-opacity: 0.50;
+			opacity: 0.50;
+		}
+	}
+	*/
+	.txt-room {
+		margin: 5px 0px 10px 0px;
+	}
+	.box-room-right {
+		padding-left: 30px;
+	}
+	.facilities-area {
+		.list {
+			padding-right: 15px;
+		}
+		border-top: 6px solid $navy;
+		padding-top: 30px;
+		.tit-facilities {
+			@extend .font-comfortaa;
+			font-size: 1.2em;
+		}
+
+		li {
+			margin-bottom: 10px;
+			line-height: 1.5;
+		}
+		li:before {
+			font-family: FontAwesome;
+			content: '\f192';
+		}
+	}
+
+}
+
+
+
+@media screen and (max-width:991px) {
+	.btnSurawongDetail {
+		font-size: 1.1em;
+	}
+}
+
+
+@media screen and (max-width:767px) {
+
+	// property
+	#property {
+		h1 {
+			margin-top: 10px;
+		}
+		.value {
+			margin-top: 40px;
+			.tit-value-area img {
+				width: 80%;
+			}
+		}
+		.location {
+			margin-top: 40px;
+			.box-inside {
+				padding-top: 20px;
+				.box-inside-above {
+					padding: 0px 10px 20px 10px;
+				}
+				.tit-hotel {
+					background-position: 5px bottom;
+					line-height: 1.4;
+					margin-top: 15px;
+					height: 23px;
+				}
+			}
+		}
+		.box-inside-padding {
+			padding: 0px 10px 20px 10px;
+		}
+
+		.ig-area {
+			margin-top: 40px;
+		}
+		.txt-room {
+			margin: 10px 0px 15px 0px;
+		}
+		.box-room-right {
+			padding-left: 0px;
+		}
+
+		.facilities-area {
+			.list {
+				padding-right: 0px;
+			}
+			border-top: 6px solid $navy;
+			padding-top: 30px;
+			.tit-facilities {
+				font-size: 1.2em;
+			}
+			li {
+				margin-bottom: 10px;
+				line-height: 1.5;
+			}
+		}
+
+
+		//detail-page
+		.detail-box {
+			&.first-child {
+				margin-top: 30px;
+			}
+
+			.tit {
+				font-size: 1.5em;
+				line-height: 1.4;
+				margin-bottom: 40px;
+			}
+			.text-value {
+				margin-top: 20px;
+				margin-bottom: 40px;
+				line-height: 1.95;
+			}
+		}
+	}
+
+	.nav-tabs > li {
+	  float: left;
+	  margin: 0px;
+	  padding: 0px;
+	  width: auto;
+	}
+	.nav-tabs > li > a {
+	  font-size: 1.20em;
+	  margin: 0px;
+	  padding: 0px;
+	}
+
+
+
+}
+
+

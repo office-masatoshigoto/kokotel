@@ -1,22 +1,26 @@
-$(function() {
-    var topBtn = $('#btn-pagetop');
-    //topBtn.hide();
-    //スクロールが500に達したらボタン表示
-    /*
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    */
+/*
+$(function(){
+  $('a[href^=#]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+*/
 
-    //スクロールしてトップ
-    topBtn.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
+$(document).ready(function () {
+//スムーズスクロール
+$('a[href^=#]' + 'a:not(.non-scroll)' + 'a:not([data-toggle="tab"])').click(function () {
+ var speed = 500;
+ var href = $(this).attr("href");
+ var target = $(href == "#" || href == "" ? 'html' : href);
+ var position = target.offset().top;
+  $("html, body").animate({
+   scrollTop: position
+  }, speed, "swing");
+ return false;
+ });
 });

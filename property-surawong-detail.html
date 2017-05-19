@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<title>kokotel</title>
+<meta name="description"  content="" />
+
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/common.css" rel="stylesheet">
+<link href="assets/css/property.css" rel="stylesheet">
+<link href="assets/css/style-jp.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" >
+<link href="assets/imgs/favicon.ico" rel="shortcut icon">
+
+<meta name="robots" content="noindex,nofollow" />
+
+</head>
+
+<body id="property" onload="initialize();">
+<div id="page-top"></div>
+
+<div class="header-fix icon-deco-w">
+  <div class="row inside">
+    <div class="col-xs-11 col-xs-offset-1">
+      <a href="/"><div class="logo-header"></div></a>
+    </div>
+    <div class="col-xs-11 text-right">
+
+    <a href="#" class="btn btn-book hvr-sweep-to-bottom" roll="button">Book Now <i class="fa fa-caret-right fa-fw" aria-hidden="true"></i></a>
+
+    </div>
+  </div>
+</div><!-- /header-fix -->
+
+
+<br clear="all hidden-xs">
+<div class="header-navi1 icon-deco-b">
+  <div class="row inside">
+      <ul>
+        <li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i><span class="hidden-xs"> </span>Concept</a></li>
+        <li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i><span class="hidden-xs"> </span>Story</a></li>
+        <li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i><span class="hidden-xs"> </span>Contact</a></li>
+      </ul>
+      <div class="navbar-right">
+        <div class="dropdown">
+         <a href="" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="icon-flag-eng"><span class="hidden-xs">English</span></a>
+          <div class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+          <ul>
+            <li class="icon-flag-thai"><a href="#" class="flag">ไทย</a></li>
+            <li class="icon-flag-han"><a href="#" class="flag">繁體中文</a></li>
+            <li class="icon-flag-kan"><a href="#" class="flag">简体中文</a></li>
+            <li class="icon-flag-jp"><a href="#" class="flag">日本語</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!--
+<div class="header-navi1 icon-deco-b">
+  <div class="row inside">
+    <div class="col-sm-11 col-sm-offset-1 col-xs-18 col-xs-offset-1">
+      <ul class="clearfix">
+        <li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i><span class="hidden-xs"> </span>Concept</a></li>
+        <li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i><span class="hidden-xs"> </span>Contact</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-11 col-xs-4 col-xs-offset-0 text-right dropdown">
+     <a href="" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="icon-flag-eng"><span class="hidden-xs">English</span></a>
+      <div class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+      <ul>
+        <li class="icon-flag-thai"><a href="#" class="flag">ไทย</a></li>
+        <li class="icon-flag-han"><a href="#" class="flag">繁體中文</a></li>
+        <li class="icon-flag-kan"><a href="#" class="flag">简体中文</a></li>
+        <li class="icon-flag-jp"><a href="#" class="flag">日本語</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="header-navi2 icon-deco-n">
+  <div class="row inside text-center hidden-xs">
+    <div class="col-sm-6 dotted-right"><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>Bangkok Surawong</a></div>
+    <div class="col-sm-6 dotted-right"><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> Krabi</a></div>
+    <div class="col-sm-6 dotted-right"><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> Phuket</a></div>
+    <div class="col-sm-6"><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> Chiangmai</a></div>
+  </div>
+
+  <nav class="nav-horizontal inside visible-xs">
+    <div class="mask">
+      <ul class="list">
+        <li class="dotted-right"><a href="#">Bangkok Surawong</a></li>
+        <li class="dotted-right"><a href="#">Krabi</a></li>
+        <li class="dotted-right"><a href="#">Phuket</a></li>
+        <li><a href="#">Chiangmai</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+-->
+
+<div class="header-navi2 icon-deco-n">
+<div class="row inside text-center">
+<nav id="scroll-menu">
+<ul class="scroll-menu-inner">
+<li><a href="#"><div class="navProperty">kokotel Bangkok Surawong</div></a></li>
+<li class="dotted-left dotted-right comingSoon"><div class="small">Coming Soon</div>kokotel Krabi Ao Nang</li>
+<li class="dotted-right comingSoon"><div class="small">Coming Soon</div>kokotel Phuket Patong</li>
+<li class="dotted-right comingSoon"><div class="small">Coming Soon</div>kokotel Krabi Healing (TBD)</li>
+<li class="comingSoon"><div class="small">Coming Soon</div>kokotel Chiang Mai Nimman </li>
+</ul>
+</nav>
+</div>
+</div>
+
+
+
+
+
+<div class="row" style="margin-top: -10px;">
+<div class="col-xs-24">
+<img src="assets/imgs/property-srawong1.jpg" width="100%" class="img-responsive" alt="メイン画像 Bangkok,Surawong">
+</div>
+</div>
+<div class="row breadcrumb">
+    <div class="col-xs-22 col-xs-offset-1" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Home</a><meta itemprop="position" content="1" /></span><i class="fa fa-angle-right fa-fw" aria-hidden="true"></i><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="#">kokotel Bangkok Surawong</a><meta itemprop="position" content="2" /></span><i class="fa fa-angle-right fa-fw" aria-hidden="true"></i><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">kokotel Bangkok Surawongの詳細<meta itemprop="position" content="3" /></span>
+    </div>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-16 col-sm-offset-4 col-xs-22 col-xs-offset-1 text-center">
+<h1>kokotel バンコク スラウォン店の特徴やお部屋、設備の紹介ページです。</h1>
+</div>
+</div>
+
+
+<section class="detail-box first-child bg-navy row">
+<div class="col-sm-24 col-sm-offset-0 col-xs-22 col-xs-offset-1">
+  <div class="icon-value text-center">
+    <ul class="icon clearfix">
+      <li><svg class="svgicon" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="61.3" height="43.1" viewBox="0 0 61.3 43.1"><title>icon-koko-dad</title><path class="cls-1" d="M17,30.4a.7.7,0,0,1-1.3.3.7.7,0,0,1,1.3-.3"/><path class="cls-1" d="M26.9,20.3a.9.9,0,0,0,1.8.4.9.9,0,0,0-1.8-.4"/><path class="cls-1" d="M46.7,13.2a4.6,4.6,0,0,1-2,3.5,3.8,3.8,0,0,1-5.1-.6,3.2,3.2,0,0,1-.5-2.9c.2-.5.7-1.5,1.4-1.2s0,1.3,0,2a1.5,1.5,0,0,0,1.7,1.3h0A2.1,2.1,0,0,0,44,12.8a2.9,2.9,0,0,0-3-2.4H41A4.1,4.1,0,0,0,38,12.1c-.5.8-.7,1.7-1.8,1.9a2,2,0,0,1-2.3-2.2,5.5,5.5,0,0,1,1.7-2.6,7.4,7.4,0,0,1,6.8-2A5.9,5.9,0,0,1,46.7,13.2ZM20.5,35c-2.3.5-4.8-1.1-6.1-3a6.6,6.6,0,0,1-.2-6.7c.4-.7,1.3-2.1,2.1-2.2s1.7,1.6,2.1,2.2a20.5,20.5,0,0,1,2.7,7.4c-.4,0-1.7-.1-1.8.4s1.5.4,1.9.4,0,1.3-.7,1.4M10.3,24.6a2.9,2.9,0,0,1-1.7-2.5c0-1.3,1.8-.5,2.5-.2s2.9,1,2.5,1.9-2.5,1.2-3.4.8m51-3a4.7,4.7,0,0,0-1.2-3.2l-.6-.6c-.2-.4-.2-.2.1-.7a4.7,4.7,0,0,0-1.8-6.1c-.4-.2-1.3-.4-1.5-.7s.1-1.2,0-1.6a4.7,4.7,0,0,0-.5-1.5,4.8,4.8,0,0,0-2.5-2.1L51.6,5h-.9a4.4,4.4,0,0,1-.2-.8,4.7,4.7,0,0,0-5.3-2.9l-.9.3-.8.4L43,1.4,42.1.7a4.7,4.7,0,0,0-5,0l-.7.5c-.1.1-.6.8-.7.9l-1.4-.6a4.7,4.7,0,0,0-5.6,2.8,4.4,4.4,0,0,1-.2.8h-.9a4.7,4.7,0,1,0,3.2,8.2,9.1,9.1,0,0,1-2,11.2c-1.6,1.4-8.1,4.5-7.8.2.6.1,2.7.6,2.6-.5s-.9-.5-1.3-.5H21.1a24.3,24.3,0,0,1,.8-3.5l.6-1.8a10.4,10.4,0,0,0,.8-1.9c.1-.7-1-1.5-1.6-1.8l-1.3-.3c-.6,0-1.2.4-1.7.5s-.7-.6-1-.8l-1.1-.5a3.4,3.4,0,0,0-2.9.6c-.3.2-.6.7-.9.7s-.9-.4-1.4-.5a3.4,3.4,0,0,0-3.5,2.2l-.2.5H6.8a3.4,3.4,0,0,0-3.1,2.3,12.9,12.9,0,0,0-.2,1.4c-.1.4.2.1-.2.4l-.6.3A3.4,3.4,0,0,0,1,24.9l.2.6c.2.5.3.4.1.7s-.6.6-.9,1a3.4,3.4,0,0,0,.5,3.9l.4.4q.4.1.1.4v.3a3.4,3.4,0,0,0,1.4,4.2l.7.3h.3a3.4,3.4,0,0,0,4.3,3.9,9.8,9.8,0,0,0,.4,1.9c.1.2,0,.2.2.3s.8,0,1,0,.9.2,1.2-.3.4-1.5.9-2,.5-.1.9.1l2.3.4h2.4l1.1-.2c.2,0,1-.4,1.2-.3s.6,1.4.7,1.7.2.7.7.8,1.6.2,1.9-.1.4-1.6.5-2.1a3.4,3.4,0,0,0,3.5-1c.3-.3.5-1.2.8-1.4s.8-.1,1-.1l1.2-.5,1,2.9c.2.5.4,2.1.8,2.3a4.4,4.4,0,0,0,2.5-.1,5.1,5.1,0,0,0,.4-1.4l.6-2c.1-.2.2-1,.4-1.2s.9.2,1.1.2l2.2.2a17,17,0,0,0,3.7-.2c.9-.2,1-.5,1.2.3l1.1,3.6c.1.2.1.5.3.6A5.8,5.8,0,0,0,47,43c.5,0,.5.1.7-.3a9.6,9.6,0,0,0,.6-1.8l1.1-3.2a4.7,4.7,0,0,0,7-3.4,11,11,0,0,1,0-1.6,10,10,0,0,1,1.4-.5,4.8,4.8,0,0,0,2.3-5c-.1-.5-.4-.9-.5-1.4s-.2-.3.1-.4l.2-.2.6-.6a4.7,4.7,0,0,0,1-3"/></svg></li>
+      <li class="right text-left color-white">Surawong’s<br />Values</li>
+    </ul>
+  </div>
+  <div class="tit text-center color-white">“昼は有名な観光地をめぐり、<br class="hidden-xs" />夜は<span class="color-pale-blue">ココテルを楽しむ</span>”</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="assets/imgs/spacer.png" data-original="assets/imgs/property-detail-surawong1.jpg" width="100%" class="lazy img-responsive" alt="昼は有名な観光地をめぐり、夜はココテルを楽しむ1">
+    </div>
+    <div class="col-sm-12">
+      <img src="assets/imgs/spacer.png" data-original="assets/imgs/property-detail-surawong2.jpg" width="100%" class="lazy img-responsive" alt="昼は有名な観光地をめぐり、夜はココテルを楽しむ2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-18 col-sm-offset-3 text-value color-white">
+      ようこそ、小さなお子様がいるファミリーのみなさん。お子さん連れの旅行は大変と思い込んでいませんか？もしお子さんが疲れて早めにホテルに帰っても、ココテルには子供が喜ぶ仕掛けがたくさん。カフェ@ココテルでは子供向けの安心メニューもご提供。お子様がお休みになったあと、夫婦だけの時間を過ごすのもいいアイディアかもしれません。
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<section class="detail-box bg-white row">
+<div class="col-sm-24 col-sm-offset-0 col-xs-22 col-xs-offset-1">
+  <div class="icon-value text-center">
+    <ul class="icon clearfix">
+      <li><svg class="svgicon-navy" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="61.3" height="43.1" viewBox="0 0 61.3 43.1"><title>icon-koko-dad</title><path class="cls-1" d="M17,30.4a.7.7,0,0,1-1.3.3.7.7,0,0,1,1.3-.3"/><path class="cls-1" d="M26.9,20.3a.9.9,0,0,0,1.8.4.9.9,0,0,0-1.8-.4"/><path class="cls-1" d="M46.7,13.2a4.6,4.6,0,0,1-2,3.5,3.8,3.8,0,0,1-5.1-.6,3.2,3.2,0,0,1-.5-2.9c.2-.5.7-1.5,1.4-1.2s0,1.3,0,2a1.5,1.5,0,0,0,1.7,1.3h0A2.1,2.1,0,0,0,44,12.8a2.9,2.9,0,0,0-3-2.4H41A4.1,4.1,0,0,0,38,12.1c-.5.8-.7,1.7-1.8,1.9a2,2,0,0,1-2.3-2.2,5.5,5.5,0,0,1,1.7-2.6,7.4,7.4,0,0,1,6.8-2A5.9,5.9,0,0,1,46.7,13.2ZM20.5,35c-2.3.5-4.8-1.1-6.1-3a6.6,6.6,0,0,1-.2-6.7c.4-.7,1.3-2.1,2.1-2.2s1.7,1.6,2.1,2.2a20.5,20.5,0,0,1,2.7,7.4c-.4,0-1.7-.1-1.8.4s1.5.4,1.9.4,0,1.3-.7,1.4M10.3,24.6a2.9,2.9,0,0,1-1.7-2.5c0-1.3,1.8-.5,2.5-.2s2.9,1,2.5,1.9-2.5,1.2-3.4.8m51-3a4.7,4.7,0,0,0-1.2-3.2l-.6-.6c-.2-.4-.2-.2.1-.7a4.7,4.7,0,0,0-1.8-6.1c-.4-.2-1.3-.4-1.5-.7s.1-1.2,0-1.6a4.7,4.7,0,0,0-.5-1.5,4.8,4.8,0,0,0-2.5-2.1L51.6,5h-.9a4.4,4.4,0,0,1-.2-.8,4.7,4.7,0,0,0-5.3-2.9l-.9.3-.8.4L43,1.4,42.1.7a4.7,4.7,0,0,0-5,0l-.7.5c-.1.1-.6.8-.7.9l-1.4-.6a4.7,4.7,0,0,0-5.6,2.8,4.4,4.4,0,0,1-.2.8h-.9a4.7,4.7,0,1,0,3.2,8.2,9.1,9.1,0,0,1-2,11.2c-1.6,1.4-8.1,4.5-7.8.2.6.1,2.7.6,2.6-.5s-.9-.5-1.3-.5H21.1a24.3,24.3,0,0,1,.8-3.5l.6-1.8a10.4,10.4,0,0,0,.8-1.9c.1-.7-1-1.5-1.6-1.8l-1.3-.3c-.6,0-1.2.4-1.7.5s-.7-.6-1-.8l-1.1-.5a3.4,3.4,0,0,0-2.9.6c-.3.2-.6.7-.9.7s-.9-.4-1.4-.5a3.4,3.4,0,0,0-3.5,2.2l-.2.5H6.8a3.4,3.4,0,0,0-3.1,2.3,12.9,12.9,0,0,0-.2,1.4c-.1.4.2.1-.2.4l-.6.3A3.4,3.4,0,0,0,1,24.9l.2.6c.2.5.3.4.1.7s-.6.6-.9,1a3.4,3.4,0,0,0,.5,3.9l.4.4q.4.1.1.4v.3a3.4,3.4,0,0,0,1.4,4.2l.7.3h.3a3.4,3.4,0,0,0,4.3,3.9,9.8,9.8,0,0,0,.4,1.9c.1.2,0,.2.2.3s.8,0,1,0,.9.2,1.2-.3.4-1.5.9-2,.5-.1.9.1l2.3.4h2.4l1.1-.2c.2,0,1-.4,1.2-.3s.6,1.4.7,1.7.2.7.7.8,1.6.2,1.9-.1.4-1.6.5-2.1a3.4,3.4,0,0,0,3.5-1c.3-.3.5-1.2.8-1.4s.8-.1,1-.1l1.2-.5,1,2.9c.2.5.4,2.1.8,2.3a4.4,4.4,0,0,0,2.5-.1,5.1,5.1,0,0,0,.4-1.4l.6-2c.1-.2.2-1,.4-1.2s.9.2,1.1.2l2.2.2a17,17,0,0,0,3.7-.2c.9-.2,1-.5,1.2.3l1.1,3.6c.1.2.1.5.3.6A5.8,5.8,0,0,0,47,43c.5,0,.5.1.7-.3a9.6,9.6,0,0,0,.6-1.8l1.1-3.2a4.7,4.7,0,0,0,7-3.4,11,11,0,0,1,0-1.6,10,10,0,0,1,1.4-.5,4.8,4.8,0,0,0,2.3-5c-.1-.5-.4-.9-.5-1.4s-.2-.3.1-.4l.2-.2.6-.6a4.7,4.7,0,0,0,1-3"/></svg></li>
+      <li class="right text-left color-navi">Surawong’s<br />Values</li>
+    </ul>
+  </div>
+  <div class="tit text-center color-navi">“この旅の本当の思い出は、<br /><span class="color-pale-blue">ホテルに帰ってから創られる</span>”</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="assets/imgs/spacer.png" data-original="assets/imgs/property-detail-surawong3.jpg" width="100%" class="lazy img-responsive" alt="この旅の本当の思い出は、ホテルに帰ってから創られる1">
+    </div>
+    <div class="col-sm-12">
+      <img src="assets/imgs/spacer.png" data-original="assets/imgs/property-detail-surawong4.jpg" width="100%" class="lazy img-responsive" alt="この旅の本当の思い出は、ホテルに帰ってから創られる2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-18 col-sm-offset-3 text-value">
+      ようこそ、大切な仲間がいる若者のみなさん。あとどれくらい、この仲間で一緒にいられるでしょうか。旅は気の置けない仲間の知らなかった一面を知る機会を与えてくれます。旅の思い出や将来の夢を夜まで一つ屋根の下で話し込むのにピッタリのお部屋、カフェ、レストランをココテルは提供します。この仲間が一生の宝物になりますように。
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="detail-box bg-navy row">
+<div class="col-sm-24 col-sm-offset-0 col-xs-22 col-xs-offset-1">
+  <div class="icon-value text-center">
+    <ul class="icon clearfix">
+      <li><svg class="svgicon" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="61.3" height="43.1" viewBox="0 0 61.3 43.1"><title>icon-koko-dad</title><path class="cls-1" d="M17,30.4a.7.7,0,0,1-1.3.3.7.7,0,0,1,1.3-.3"/><path class="cls-1" d="M26.9,20.3a.9.9,0,0,0,1.8.4.9.9,0,0,0-1.8-.4"/><path class="cls-1" d="M46.7,13.2a4.6,4.6,0,0,1-2,3.5,3.8,3.8,0,0,1-5.1-.6,3.2,3.2,0,0,1-.5-2.9c.2-.5.7-1.5,1.4-1.2s0,1.3,0,2a1.5,1.5,0,0,0,1.7,1.3h0A2.1,2.1,0,0,0,44,12.8a2.9,2.9,0,0,0-3-2.4H41A4.1,4.1,0,0,0,38,12.1c-.5.8-.7,1.7-1.8,1.9a2,2,0,0,1-2.3-2.2,5.5,5.5,0,0,1,1.7-2.6,7.4,7.4,0,0,1,6.8-2A5.9,5.9,0,0,1,46.7,13.2ZM20.5,35c-2.3.5-4.8-1.1-6.1-3a6.6,6.6,0,0,1-.2-6.7c.4-.7,1.3-2.1,2.1-2.2s1.7,1.6,2.1,2.2a20.5,20.5,0,0,1,2.7,7.4c-.4,0-1.7-.1-1.8.4s1.5.4,1.9.4,0,1.3-.7,1.4M10.3,24.6a2.9,2.9,0,0,1-1.7-2.5c0-1.3,1.8-.5,2.5-.2s2.9,1,2.5,1.9-2.5,1.2-3.4.8m51-3a4.7,4.7,0,0,0-1.2-3.2l-.6-.6c-.2-.4-.2-.2.1-.7a4.7,4.7,0,0,0-1.8-6.1c-.4-.2-1.3-.4-1.5-.7s.1-1.2,0-1.6a4.7,4.7,0,0,0-.5-1.5,4.8,4.8,0,0,0-2.5-2.1L51.6,5h-.9a4.4,4.4,0,0,1-.2-.8,4.7,4.7,0,0,0-5.3-2.9l-.9.3-.8.4L43,1.4,42.1.7a4.7,4.7,0,0,0-5,0l-.7.5c-.1.1-.6.8-.7.9l-1.4-.6a4.7,4.7,0,0,0-5.6,2.8,4.4,4.4,0,0,1-.2.8h-.9a4.7,4.7,0,1,0,3.2,8.2,9.1,9.1,0,0,1-2,11.2c-1.6,1.4-8.1,4.5-7.8.2.6.1,2.7.6,2.6-.5s-.9-.5-1.3-.5H21.1a24.3,24.3,0,0,1,.8-3.5l.6-1.8a10.4,10.4,0,0,0,.8-1.9c.1-.7-1-1.5-1.6-1.8l-1.3-.3c-.6,0-1.2.4-1.7.5s-.7-.6-1-.8l-1.1-.5a3.4,3.4,0,0,0-2.9.6c-.3.2-.6.7-.9.7s-.9-.4-1.4-.5a3.4,3.4,0,0,0-3.5,2.2l-.2.5H6.8a3.4,3.4,0,0,0-3.1,2.3,12.9,12.9,0,0,0-.2,1.4c-.1.4.2.1-.2.4l-.6.3A3.4,3.4,0,0,0,1,24.9l.2.6c.2.5.3.4.1.7s-.6.6-.9,1a3.4,3.4,0,0,0,.5,3.9l.4.4q.4.1.1.4v.3a3.4,3.4,0,0,0,1.4,4.2l.7.3h.3a3.4,3.4,0,0,0,4.3,3.9,9.8,9.8,0,0,0,.4,1.9c.1.2,0,.2.2.3s.8,0,1,0,.9.2,1.2-.3.4-1.5.9-2,.5-.1.9.1l2.3.4h2.4l1.1-.2c.2,0,1-.4,1.2-.3s.6,1.4.7,1.7.2.7.7.8,1.6.2,1.9-.1.4-1.6.5-2.1a3.4,3.4,0,0,0,3.5-1c.3-.3.5-1.2.8-1.4s.8-.1,1-.1l1.2-.5,1,2.9c.2.5.4,2.1.8,2.3a4.4,4.4,0,0,0,2.5-.1,5.1,5.1,0,0,0,.4-1.4l.6-2c.1-.2.2-1,.4-1.2s.9.2,1.1.2l2.2.2a17,17,0,0,0,3.7-.2c.9-.2,1-.5,1.2.3l1.1,3.6c.1.2.1.5.3.6A5.8,5.8,0,0,0,47,43c.5,0,.5.1.7-.3a9.6,9.6,0,0,0,.6-1.8l1.1-3.2a4.7,4.7,0,0,0,7-3.4,11,11,0,0,1,0-1.6,10,10,0,0,1,1.4-.5,4.8,4.8,0,0,0,2.3-5c-.1-.5-.4-.9-.5-1.4s-.2-.3.1-.4l.2-.2.6-.6a4.7,4.7,0,0,0,1-3"/></svg></li>
+      <li class="right text-left color-white">Surawong’s<br />Values</li>
+    </ul>
+  </div>
+  <div class="tit text-center color-white">“ココテルは活動的に動く<br /><span class="color-pale-blue">あなたの秘密基地</span>”</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="assets/imgs/spacer.png" data-original="assets/imgs/property-detail-surawong5.jpg" width="100%" class="lazy img-responsive" alt="ココテルは活動的に動くあなたの秘密基地1">
+    </div>
+    <div class="col-sm-12">
+      <img src="assets/imgs/spacer.png" data-original="assets/imgs/property-detail-surawong6.jpg" width="100%" class="lazy img-responsive" alt="ココテルは活動的に動くあなたの秘密基地2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-18 col-sm-offset-3 text-value color-white">
+      ようこそ、日常社会で誰よりも頑張っているみなさん。たまには自分へのご褒美で、エネルギーと笑顔のあふれるバンコクを旅してみませんか。活動的なあなただからこそ、ゆっくり最高品質のベッドでお休みになってほしいとココテルは考えています。ここはあなたのセカンドハウスです。
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+<section class="location row">
+  <div class="col-xs-22 col-xs-offset-1 box-location">
+    <div class="tit-location text-center ">kokotel Bangkok Surawong’s Rooms</div>
+    <div class="icon-deco-n bg"></div>
+
+    <!-- tab-menu -->
+    <ul class="nav nav-tabs text-center">
+    <li class="active"><a href="#tab1" data-toggle="tab"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>kokoSolo</a></li>
+    <li><a href="#tab2" data-toggle="tab"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>kokoMate</a></li>
+    <li><a href="#tab3" data-toggle="tab"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>kokoCouple</a></li>
+    <li><a href="#tab4" data-toggle="tab"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>kokoFamily</a></li>
+    <li><a href="#tab5" data-toggle="tab"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>kokoParty</a></li>
+    </ul>
+    <!-- /tab-menu -->
+
+
+    <div class="box-inside">
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active roof mt70" id="tab1">
+          <div class="row clearfix box-inside-padding box-carousel">
+            <div class="col-sm-13">
+              <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500">-->
+              <div id="carousel-example-generic" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="assets/imgs/room-surawong-solo1.jpg" width="100%" alt="kokotel surawon room : koko solo1">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-solo2.jpg" width="100%" alt="kokotel surawon room : koko solo2">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-solo3.jpg" width="100%" alt="kokotel surawon room : koko solo3">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-solo4.jpg" width="100%" alt="kokotel surawon room : koko solo4">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control non-scroll" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="fa fa-chevron-left fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control non-scroll" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-11 box-room-right">
+              <div class="tit-hotel">kokoSolo（1人さま向け）<!--KokoSolo for 1 guest--></div>
+              <p class="txt-room">こちらのお部屋はビジネス、ご旅行、どのような用途にでも満足いただけます。小さいながら快適なお部屋、そして幅120センチ超のワイドなベッドを用意しております。
+<!--kokoSolo for 1 guest: This room has all you could ask for. A small and comfortable room with 4ft bed for 1 person.
+-->
+              </p>
+              <a href="#" class="btn hvr-sweep-to-bottom" roll="button" style="width: 100%;">Book Now <i class="fa fa-caret-right fa-fw" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div><!-- /tab1 -->
+
+
+        <div class="tab-pane fade" id="tab2">
+          <div class="row clearfix box-inside-padding box-carousel">
+            <div class="col-sm-13">
+              <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500">-->
+              <div id="carousel-example-generic2" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="assets/imgs/room-surawong-mate1.jpg" width="100%" alt="kokotel surawon room : koko mate1">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-mate2.jpg" width="100%" alt="kokotel surawon room : koko mate2">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-mate3.jpg" width="100%" alt="kokotel surawon room : koko mate3">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-mate4.jpg" width="100%" alt="kokotel surawon room : koko mate4">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control non-scroll" href="#carousel-example-generic2" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="fa fa-chevron-left fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control non-scroll" href="#carousel-example-generic2" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-11 box-room-right">
+              <div class="tit-hotel">KokoMate（2人さま向け）<!--KokoMate for 2 guests--></div>
+              <p class="txt-room">ベーシックですが、決して飽きさせないツインルームのお部屋です。大人お2人＋お子様1人、お友達同士、同僚とのご出張、などさまざまな用途でご満足いただけます。<!--A standard but NOT a dull room for two persons. This room is good for couples with a kid, friends, relatives, traveling companions, and the list goes on. The KokoMate offers adjoining twin beds (two single mattresses on one bed).-->
+              </p>
+              <a href="#" class="btn hvr-sweep-to-bottom" roll="button" style="width: 100%;">Book Now <i class="fa fa-caret-right fa-fw" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div><!-- /tab2 -->
+
+        <div class="tab-pane fade" id="tab3">
+          <div class="row clearfix box-inside-padding box-carousel">
+            <div class="col-sm-13">
+              <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500">-->
+              <div id="carousel-example-generic3" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="assets/imgs/room-surawong-couple1.jpg" width="100%" alt="kokotel surawon room : koko couple1">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-couple2.jpg" width="100%" alt="kokotel surawon room : koko couple2">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-couple3.jpg" width="100%" alt="kokotel surawon room : koko couple3">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control non-scroll" href="#carousel-example-generic3" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="fa fa-chevron-left fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control non-scroll" href="#carousel-example-generic3" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-11 box-room-right">
+              <div class="tit-hotel">KokoCouple（2人さま向け）<!--KokoCouple for 2 guests--></div>
+              <p class="txt-room">一番人気のお部屋です。カップル、仲の良いお友達にピッタリのクイーンサイズのベッドを用意しています。追加の毛布・お布団もリクエストいただければ手配いたします。<!--The most popular room type, KokoCouple is Perfect for couples or two close friends sharing a queen sized bed, additional duvet is available upon request during the time of reservation.-->
+              </p>
+              <a href="#" class="btn hvr-sweep-to-bottom" roll="button" style="width: 100%;">Book Now <i class="fa fa-caret-right fa-fw" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div><!-- /tab3 -->
+
+        <div class="tab-pane fade" id="tab4">
+          <div class="row clearfix box-inside-padding box-carousel">
+            <div class="col-sm-13">
+              <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500">-->
+              <div id="carousel-example-generic4" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic4" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic4" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic4" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="assets/imgs/room-surawong-family1.jpg" width="100%" alt="kokotel surawon room : koko family1">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-family2.jpg" width="100%" alt="kokotel surawon room : koko family2">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-family3.jpg" width="100%" alt="kokotel surawon room : koko family3">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control non-scroll" href="#carousel-example-generic4" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="fa fa-chevron-left fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control non-scroll" href="#carousel-example-generic4" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-11 box-room-right">
+              <div class="tit-hotel">KokoFamily（3人さま向け）<!--KokoFamily for 3 guests--></div>
+              <p class="txt-room">21平米のお部屋に3つのシングルベッドを配置した個性あふれるお部屋です。どこか日本の旅館を彷彿とさせるそのスタイルは、並んでお休みになりたいご家族、夜中まで話の尽きないお友達にピッタリです。<!--kokoFamily for 3 guests: A 21sqm room fitted with adjoining three single mattresses (ryokan-style), Koko Family is perfect for family and friends traveling together and wanting to stay together.-->
+              </p>
+              <a href="#" class="btn hvr-sweep-to-bottom" roll="button" style="width: 100%;">Book Now <i class="fa fa-caret-right fa-fw" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div><!-- /tab4 -->
+
+        <div class="tab-pane fade" id="tab5">
+          <div class="row clearfix box-inside-padding box-carousel">
+            <div class="col-sm-13">
+              <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500">-->
+              <div id="carousel-example-generic5" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic5" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic5" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic5" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="assets/imgs/room-surawong-party1.jpg" width="100%" alt="kokotel surawon room : koko party1">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-party2.jpg" width="100%" alt="kokotel surawon room : koko party2">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/imgs/room-surawong-party3.jpg" width="100%" alt="kokotel surawon room : koko party3">
+                    <div class="carousel-caption">
+                      <!--<p>caption text</p>-->
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control non-scroll" href="#carousel-example-generic5" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="fa fa-chevron-left fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control non-scroll" href="#carousel-example-generic5" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-11 box-room-right">
+              <div class="tit-hotel">KokoParty（4人さま向け）<!--KokoParty for 4 guests--></div>
+              <p class="txt-room">独創的なデザインが目を引く、特別ルームです。24平米のお部屋に4名さま分のベッドを配置しています。普段は同じ部屋に泊まれない4人家族、お友達グループにピッタリです。<!--kokoParty for 4 guests: A cleverly designed 24sqm room to fit four persons, kokoParty is perfect for family or a group of friends. This room type has two single beds and a bunk bed.-->
+              </p>
+              <a href="#" class="btn hvr-sweep-to-bottom" roll="button" style="width: 100%;">Book Now <i class="fa fa-caret-right fa-fw" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div><!-- /tab5 -->
+
+      </div><!-- /tab-content -->
+
+
+      <div class="facilities-area row">
+        <div class="box-inside-padding row">
+          <div class="col-sm-6">
+            <div class="tit-facilities color-navi"><apan class="color-pale-blue">Rooms</apan> Facilities</div>
+          </div>
+          <div class="col-sm-9 col-xs-24 list">
+            <!--<ul>-->
+              <li> 高品質なベッドマットレス</li>
+              <li> バス用品 <br />（シャワージェル、シャンプー、コンディショナー）</li>
+              <li> セーフティーボックス</li>
+              <li> デスク</li>
+              <li> ヘアードライヤー</li>
+              <li> ミネラルウォーター</li>
+              <li> 自由に温度設定可能なエアコン</li>
+              <li> 目覚まし機能付きの電話</li>
+              <li> 壁掛けの40型テレビ</li>
+              <!--
+              <li> High quality bedding</li>
+              <li> Toiletries<br />(Shower gel, Shampoo and Conditioner)</li>
+              <li> In-room safe deposit box</li>
+              <li> Desk</li>
+              <li> Hair dryer</li>
+              <li> Complimentary bottled drinking water</li>
+              <li> Individually controlled air conditioning</li>
+              <li> Telephone/Alarm Clock</li>
+              <li> Wall mounted 40" LED TV</li>
+              -->
+            <!--</ul>-->
+          </div>
+          <div class="col-sm-9">
+            <!--<ul>-->
+              <li> ミニ冷蔵庫</li>
+              <li> シャワールーム <br />（シャワールームとトイレは別々の仕様です）</li>
+              <li> 高速Wi-Fi無料</li>
+              <li> スリッパ</li>
+              <li> バスルームアメニティ（要リクエスト）</li>
+              <li> ケーブルTV</li>
+              <li> アイロン（要リクエスト）</li>
+              <li> 全室禁煙</li>
+              <!--
+              <li> Mini fridge</li>
+              <li> Ensuite bathroom with rain shower<br />(separate shower and toilet)</li>
+              <li> FREE high speed WI-FI in all guestrooms</li>
+              <li> Slippers</li>
+              <li> Complimentary bathroom amenities are on request</li>
+              <li> Cable TV channels</li>
+              <li> Iron and ironing board available upon request</li>
+              <li> All rooms are non-smoking</li>
+              -->
+            <!--</ul>-->
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /box-inside -->
+
+  </div>
+</section>
+
+
+<section class="promotion row">
+  <a href="#"><div class="col-xs-22 col-xs-offset-1 box-location">
+  <img src="assets/imgs/spacer.png" data-original="assets/imgs/banner-promotion.jpg" width="100%" class="lazy img-responsive" alt="kokotel's Promotion　当サイトからの予約で、宿泊料金10%オフ +最大200バーツのお食事券（1泊あたり）をプレゼント！">
+  </div></a>
+</section>
+
+
+<section class="very-best-banners-area">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-7 col-xs-20 col-xs-offset-2 bg-line-fluffy-above">
+      <h2 class="tit text-center"><span class="color-pale-blue">Very Best of</span> <span class="color-navi">Surawong</span></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-22 col-xs-offset-1">
+      <h3 class="text-center">ココとスタッフがお勧めする、バンコク・スラウォンエリア紹介です。</h3>
+    </div>
+  </div>
+
+  <div class="row clearfix">
+    <a href="#"><div class="col-sm-11 col-sm-offset-1 col-xs-22 col-xs-offset-1 banner box-left mt">
+      <div class="num">#01</div>
+      <div class="img"><img src="assets/imgs/spacer.png" data-original="assets/imgs/banner-very-best-night-life.jpg" width="100%" class="lazy img-responsive" alt="NIGHT LIFE">
+      </div>
+    </div></a>
+    <a href="#"><div class="col-sm-11 col-sm-offset-0 col-xs-22 col-xs-offset-1 banner box-right mt">
+      <div class="num">#02</div>
+      <div class="img"><img src="assets/imgs/spacer.png" data-original="assets/imgs/banner-very-best-kids.jpg" width="100%" class="lazy img-responsive" alt="KIDS">
+      </div>
+    </div></a>
+  </div>
+
+  <div class="row clearfix">
+    <a href="#"><div class="col-sm-11 col-sm-offset-1 col-xs-22 col-xs-offset-1 banner box-left mt">
+      <div class="num">#03</div>
+      <div class="img"><img src="assets/imgs/spacer.png" data-original="assets/imgs/banner-very-best-shopping.jpg" width="100%" class="lazy img-responsive" alt="SHOPPING">
+      </div>
+    </div></a>
+    <a href="#"><div class="col-sm-11 col-sm-offset-0 col-xs-22 col-xs-offset-1 banner box-right mt">
+      <div class="num">#04</div>
+      <div class="img"><img src="assets/imgs/spacer.png" data-original="assets/imgs/banner-very-best-culture.jpg" width="100%" class="lazy img-responsive" alt="CULTURE">
+      </div>
+    </div></a>
+  </div>
+
+  <div class="row clearfix">
+    <a href="#"><div class="col-sm-11 col-sm-offset-1 col-xs-22 col-xs-offset-1 banner box-left mt">
+      <div class="num">#05</div>
+      <div class="img"><img src="assets/imgs/spacer.png" data-original="assets/imgs/banner-very-best-art.jpg" width="100%" class="lazy img-responsive" alt="ART">
+      </div>
+    </div></a>
+    <a href="#"><div class="col-sm-11 col-sm-offset-0 col-xs-22 col-xs-offset-1 banner box-right mt">
+      <div class="num">#06</div>
+      <div class="img"><img src="assets/imgs/spacer.png" data-original="assets/imgs/banner-very-best-experience.jpg" width="100%" class="lazy img-responsive" alt="EXPERIENCE">
+      </div>
+    </div></a>
+  </div>
+</section>
+
+
+
+
+<section class="btns-area row">
+  <a href="#">
+    <div class="col-sm-8 col-xs-12 col-sm-offset-0 col-xs-offset-0 border-r btn1">
+      <div class="tit text-center">kokotel story</div>
+      <div class="txt">ココテルは、Kokoとその家族が、ゲストをもてなすために作り上げた空間なのです。彼らの物語をご覧ください。</div>
+    </div>
+  </a>
+  <a href="#">
+    <div class="col-sm-8 col-xs-12 col-sm-offset-0 col-xs-offset-0 border-r2 border-l btn2">
+      <div class="tit text-center">RECRUIT</div>
+      <div class="txt">kokotelで一緒に働きませんか？あなたの得意が世の中を笑顔にします。</div>
+    </div>
+  </a>
+  <div class="col-sm-8 col-xs-12 col-sm-offset-0 col-xs-offset-0 border-l2 border-r3 border-t2 btn3">
+    <div class="tit text-center"><span class="font-melmaga">メルマガ登録</span></div>
+    <div class="txt">お得クーポンや最新情報をお届けします！</div>
+    <div class="subscribe-area">
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <a href="#" class="btn btn-100per hvr-sweep-to-bottom" roll="button"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> Subscribe</a>
+      </div>
+    </div>
+  </div>
+  <a href="#">
+    <div class="col-sm-24 col-sm-offset-0 col-xs-offset-0 border-t hidden-xs">
+      <div class="row">
+        <div class="col-sm-9 col-md-7"><img src="assets/imgs/spacer.png" data-original="assets/imgs/btn4.jpg" width="100%" class="lazy img-responsive" alt="Surawong"></div>
+        <div class="col-sm-15 col-md-17">
+          <div class="tit2">BUSINESS PAGE</div>
+          <div class="txt">kokotelは、建物の有効活用のノウハウを提供しています。建物や土地を持て余しているオーナーさんがいらっしゃいましたら、お手伝いさせていただきます。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-xs-offset-0 border-t2 border-l visible-xs btn4">
+      <div class="tit text-center">BUSINESS PAGE</div>
+      <div class="txt">kokotelは、建物の有効活用のノウハウを提供しています。<span class="hidden-xs">建物や土地を持て余しているオーナーさんがいらっしゃいましたら、お手伝いさせていただきます。</span></div>
+    </div>
+  </a>
+</section>
+
+
+<div id="btn-pagetop"><a href="#page-top"><img src="assets/imgs/spacer.png" data-original="assets/imgs/btn-pagetop.png" class="lazy" alt="Page Top"></a></div>
+<div class="footer-deco icon-deco-n2"></div>
+<footer>
+  <div class="row navi-footer">
+    <div class="col-sm-6 col-sm-offset-1 col-xs-22 col-xs-offset-1 box-about">
+      <div class="tit icon-icon-koko">About kokotel</div>
+      <ul>
+        <li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> Concept</a></li>
+        <li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> Story</a></li>
+        <li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> Contact</a></li>
+        <!--<li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> Privacy policy</a></li>-->
+      </ul>
+
+
+    </div>
+    <div class="col-sm-7 col-sm-offset-0 col-xs-22 col-xs-offset-1 box-melmaga">
+      <div class="tit icon-icon-koko">kokotel店舗</div>
+      <ul>
+        <li><a href="#"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> kokotel Bangkok Surawong</a></li>
+        <li class="comingSoonNaviFooter"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> kokotel Krabi Ao Nang</li>
+        <li class="comingSoonNaviFooter"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> kokotel Phuket Patong</li>
+        <li class="comingSoonNaviFooter"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> kokotel Krabi Healing(TBD)</li>
+        <li class="comingSoonNaviFooter"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> kokotel Chiang Mai Nimman</li>
+      </ul>
+    </div>
+
+    <div class="col-sm-8 col-sm-offset-0 col-xs-22 col-xs-offset-1 address">
+      <div class="tit icon-icon-koko">Head office</div>
+      <!--<div class="txt">Newlegacy Hospitality Pte. Ltd.</div>-->
+      <div class="txt">
+      <ul>
+        <li><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> 40/22 ITF Tower 12 Floor, Silom Road, Kwaeng Suriyawongse, Khet Bangrak, Bangkok</li>
+        <li><i class="fa fa-phone fa-fw" aria-hidden="true"></i> +66 xxx-xxx-xxx</li>
+        <li><a href="mailto:info@kokotel.com"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> info@kokotel.com</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="col-xs-22 col-xs-offset-1 mt30">
+      <div class="tit icon-icon-koko">メルマガ登録</div>
+      <div class="txt">お得クーポンや最新情報をお届けします！</div>
+      <div class="subscribe-area">
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <a href="#" class="btn btn-100per hvr-sweep-to-bottom" roll="button"><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i> Subscribe</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="deco-copy-footer icon-w-deco-footer"></div>
+  <div class="row copy-footer">
+    <div class="col-sm-15 col-sm-offset-0 col-xs-8 col-xs-offset-1">
+      <div>
+        <ul class="clearfix">
+          <li class="icon-x-icon1"><a href="#">Facebook</a></li>
+          <li class="icon-x-icon2"><a href="#">Instagram</a></li>
+          <li class="icon-x-icon3"><a href="#">Twitter</a></li>
+          <li class="icon-x-icon4"><a href="#">Line</a></li>
+          <li class="icon-x-icon5"><a href="#">Tripadvisor</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-9 col-sm-offset-0 col-xs-14">
+      <div class="copyright text-right">&copy; <a href="#">Kokotel (Thailand) Co., Ltd.</a> All Rights Reserved.</div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="assets/js/jquery.lazyload.min.js"></script>
+<script src="assets/js/jquery.pagetopscroll.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!--<script src="assets/js/css_browser_selector.js"></script>-->
+<script src="assets/js/jquery.matchHeight.js"></script>
+<script type="text/javascript">
+$(function() {
+	// matchHeight
+	$('.value ul').matchHeight();
+	// drawer
+});
+
+$(function()
+{
+  $( 'img.lazy' ).lazyload( {
+    threshold : 1 ,
+    effect : 'fadeIn' ,
+    effect_speed: 300 ,
+    failure_limit: 1 ,
+  } ) ;
+} ) ;
+</script>
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv-printshiv.min.js" async defer></script>
+<script src="assets/js/respond.min.js" async defer></script>
+<![endif]-->
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!--<script src="http://maps.google.com/maps/api/js?key=AIzaSyCipEaS-MJ1UP3cSEhqR-Ca_0AFvy1EmMk"></script>
+<script src="assets/js/map-srawong.js"></script>
+-->
+
+
+
+
+</body>
+</html>
